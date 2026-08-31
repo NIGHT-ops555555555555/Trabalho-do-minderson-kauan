@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garcez Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hub-container">
+        <aside class="sidebar">
+            <img src="LogoGarcez.webp" alt="Logo Garcez" class="brand-logo">
+            <h2>Colégio Garcez</h2>
+            <p class="sub">Painel Interativo</p>
+
+            <nav class="nav-links">
+                <button onclick="carregarLugar('diretoria')">🏢 Diretoria</button>
+                <button onclick="carregarLugar('professores')">☕ Sala dos Professores</button>
+                <button onclick="carregarLugar('basquete')">🏀 Arena de Basquete</button>
+            </nav>
+        </aside>
+
+        <main class="content-area">
+            <div class="image-box">
+                <img src="colegiogarcez.webp" alt="Estrutura do Colégio">
+            </div>
+
+            <div class="info-card">
+                <h1 id="nome-espaco">Diretoria</h1>
+                <p id="desc-espaco">Espaço de gestão da escola, responsável pela organização pedagógica e atendimento às famílias.</p>
+                <button class="btn-main" onclick="acaoInterativa()">Explorar Ação</button>
+                <p id="feedback" class="feedback-txt"></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
